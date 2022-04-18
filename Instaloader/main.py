@@ -40,9 +40,9 @@ async def main(_, msg):
             return
         if len(photos+videos) == 1:
             if caption:
-                caption += "\n\nBy @Miuiprojects"
+                caption += "\n\nBy @sk_botz"
             else:
-                caption = "By @Miuiprojects"
+                caption = "By @sk_botz"
             if photos:
                 for photo in photos:
                     await msg.reply_photo(photo, caption)
@@ -57,7 +57,7 @@ async def main(_, msg):
                 for video in videos:
                     await msg.reply_video(video)
             if caption:
-                await msg.reply(f"**POST CAPTION : **\n\n{caption} \n\nBy @Miuiprojects")
+                await msg.reply(f"**POST CAPTION : **\n\n{caption} \n\nBy @sk_botz")
         await status.delete()
         shutil.rmtree(path)
     except AttributeError:
